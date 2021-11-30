@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Simple app</title>
+        <script type="module" src="../utils.js" defer="defer"></script>
+        <script type="module" src="new_employee.js" defer="defer"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <h2>New employee</h2>
+            <form id="form">
+                <label>Firstname: </label>
+                <input id="firstname" type="text"> <br>
+                <label>Lastname: </label>
+                <input id="lastname" type="text"> <br>
+                <label>Salary: </label>
+                <input id="salary" type="number" step="0.01"> <br>
+                <input type="submit">
+            </form>
+        </div>
+    </body>
+</html>

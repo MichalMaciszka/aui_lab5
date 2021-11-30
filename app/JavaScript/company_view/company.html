@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Simple app</title>
+        <script type="module" src="../utils.js" defer="defer"></script>
+        <script type="module" src="company.js" defer="defer"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <h2>Company</h2>
+            <label for="name">Name: </label>
+            <span id="name">name</span>
+            <label for="budget">Budget: </label>
+            <span id="budget">budget</span>
+            <section>
+                <h3>Employees</h3>
+                <table border="1px">
+                    <thead>
+                        <tr>
+                            <th>name</th>
+                            <th>view</th>
+                            <th>edit</th>
+                            <th>delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                    </tbody>
+                </table>
+                <div id = "link_container"></div>
+            </section>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Simple app</title>
+        <script type="module" src="../utils.js" defer="defer"></script>
+        <script type="module" src="edit_company.js" defer="defer"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <h2>Edit company</h2>
+            <form id="form">
+                <label for="name">Name: </label>
+                <input id="name" type="text" disabled> <br>
+                <label for="budget">Budget: </label>
+                <input id="budget" type="number" step="0.01"> <br>
+                <input type="submit">
+            </form>
+        </div>
+    </body>
+</html>

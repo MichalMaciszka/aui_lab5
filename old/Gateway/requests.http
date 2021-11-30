@@ -1,0 +1,109 @@
+GET localhost:8080/api/companies
+
+###
+GET localhost:8080/api/companies/comp1
+
+###
+GET localhost:8080/api/employees
+
+###
+GET localhost:8080/api/employees/1
+
+###
+GET localhost:8080/api/companies/comp1/employees
+
+###
+GET localhost:8080/api/companies/comp1/employees/2
+
+###
+GET localhost:8080/api/companies/comp1/employees/4
+
+###
+GET localhost:8080/api/companies/xyz
+
+###
+GET localhost:8080/api/employees/9
+
+###
+POST localhost:8080/api/companies
+Content-Type: application/json
+
+{
+  "name": "comp3",
+  "budget": 662254.99
+}
+
+###
+POST localhost:8080/api/employees
+Content-Type: application/json
+
+{
+  "firstname": "nowy",
+  "lastname": "pracownik",
+  "salary": 7777.66,
+  "companyName": "comp3"
+}
+
+###
+POST localhost:8080/api/companies/comp2/employees
+Content-Type: application/json
+
+{
+  "firstname": "jeszcze",
+  "lastname": "nowszy",
+  "salary": 5555.11
+}
+
+###
+GET localhost:8080/api/companies/comp1/employees
+
+###
+PUT localhost:8080/api/companies/comp1
+Content-Type: application/json
+
+{
+  "budget": 4200.00
+}
+
+###
+DELETE localhost:8080/api/companies/comp1
+
+###
+DELETE localhost:8080/api/companies/comp2/employees/3
+
+
+###
+DELETE localhost:8080/api/employees/1
+
+
+###
+PUT localhost:8080/api/employees/2
+Content-Type: application/json
+
+{
+  "firstname": "imie",
+  "lastname": "nazwisko",
+  "salary": 123.45
+}
+
+###
+PUT localhost:8080/api/companies/comp1/employees/1
+Content-Type: application/json
+
+{
+  "firstname": "x",
+  "lastname": "y",
+  "salary": 987.65
+}
+
+###
+POST localhost:8081/api/companies
+Content-Type: application/json
+
+{
+  "name": "comp3",
+  "budget": 662254.99
+}
+
+###
+DELETE localhost:8081/api/companies/comp1

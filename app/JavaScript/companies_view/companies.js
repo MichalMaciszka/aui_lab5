@@ -31,7 +31,7 @@ function createTableRow(company){
     let tr = document.createElement('tr');
     tr.appendChild(createTextCell(company["name"]));
     tr.appendChild(createLinkCell('view', '../company_view/company.html?name='+company["name"]));
-    tr.appendChild(createLinkCell('edit', "edit_company.html?name="+company["name"]));
+    tr.appendChild(createLinkCell('edit', "/companies_view/edit_company.html?name="+company["name"]));
     tr.appendChild(createButtonCell('delete', () => deleteCompany(company)));
     return tr;
 }
